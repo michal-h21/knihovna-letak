@@ -1,0 +1,163 @@
+\documentclass[12]{leaflet}
+
+\usepackage{fontspec}
+\setmainfont{Fira Sans}[Ligatures=TeX]
+\usepackage{uklogo}
+% \usepackage[T1]{fontenc}
+% \usepackage[utf8]{inputenc}
+\usepackage[czech]{babel}
+\usepackage{url}
+\usepackage{tabularx}
+\usepackage{tikz}
+\usepackage{graphicx}
+
+
+\newenvironment{page}{\easylist}{\endeasylist\clearpage}
+\usepackage[at]{easylist}
+\ListProperties(Hide=10)
+\newcommand\potrebujes{\textbf{Potřebujete:}\par\bigskip}
+\newcommand\mytitle[1]{\bgroup\large\bfseries #1\egroup}
+\renewcommand\subsection[1]{\par\vskip3pt\bgroup\large #1\egroup\par}
+\newcommand\vykrik[1]{\medskip\par\bgroup\Large\MakeUppercase{#1}\egroup}
+\newenvironment{info}{}{}
+\begin{document}
+
+
+\raggedright
+\begin{page}
+  \uklogo[64pt]
+  \vfill
+  \url{knihovna.pedf.cuni.cz}
+  \rotatebox{90}{\input{planekknihovny}}
+\end{page}
+\begin{page}
+ 
+\potrebujes
+% \begin{easylist}
+@ literaturu ke studiu
+@ článek z časopisu
+@ tisknout 
+@ kopírovat
+@ skenovat
+@ poradit s informačními zdroji
+@ poradit s citováním ?
+% \end{easylist}
+
+
+\vykrik{přijďte do knihovny!}
+
+@ \potrebujes půjčit publikace domů ?
+
+\vykrik{přijďte do Výpůjčního protokolu}
+
+\end{page}
+\begin{page}
+\potrebujes 
+@ knihu, která je dostupná jen ve studovně,
+@ prolistovat časopisy
+@ tisknout, kopírovat, skenovat
+@ poradit s informačními zdroji 
+\vykrik{přijď do Studovny}
+
+
+\potrebujes 
+
+@ specifické služby
+
+\vykrik{Využijte služeb studovny}
+
+\begin{info}
+ve studovně najdeš dva počítače vybavené speciálním softwarem pro zrakově
+postižené, kamerovou čtecí lupu, multifunkční
+zařízení: skener, tiskárnu a kopírku. 
+
+Seznam digitalizované literatury pro studenty se zrakovým postižením najdeš na
+našem webu v sekci Služby.
+\end{info}
+
+\potrebujes 
+@ najít publikace ke studiu, jejich signatury
+@ zarezervovat knihu
+@ prodloužit výpůjčky
+
+\vykrik{k tomu slouží Centrální katalog UK}
+
+          \url{ckis.cuni.cz}
+
+\potrebujes 
+@ vyhledat literaturu pro psaní práce
+@ článek ze zahraničního časopisu?
+\vykrik{využijte elektronické informační zdroje} 
+
+přístup z webu knihovny na fakultě přímo, z domova po přihlášení heslem CAS
+
+\end{page}
+
+\begin{page}
+K využívání služeb knihoven potřebuješ  Průkaz studenta UK, příp. průkaz externího uživatele služeb, …
+
+Seznam výdejních center je na webu UK…
+Při první návštěvě v Ústřední knihovně PedF  
+průkaz + vyplnit Dohodu o výpůjční službě automatizovaným systémem
+Průkaz platí do všech knihoven na UK, ale ve všech je třeba se registrovat a chovat podle místních knihovních řádů.
+
+Další informace 
+web ÚK PedF UK, Informační odpoledne pro studenty 1. ročníků s praktickou instruktáží, nástěnky, pracovníci knihovny, ????
+
+
+
+Těšíme se na Tebe
+zaměstnanci Ústřední knihovny PedF UK
+\end{page}  
+
+\begin{page}
+\section{Kontakty}
+
+\subsection{Výpůjční protokol}
+					Magdalény Rettigové 4, přízemí,\\
+vpravo přes kuřácký dvorek, dveře vedle auly\\
+
+\smallskip
+
+\begin{tabular}{@{}ll}
+  Po & 8.00--16.00\\
+  Ut--Pá & 8.00--17.00\\
+\end{tabular}
+
+\subsection{Studovna}
+				Magdalény Rettigové 4, v přízemí vlevo a ještě 2x vlevo, 
+pak dveře po pravé straně za regály s časopisy
+
+\smallskip
+
+\begin{tabular}{@{}ll}
+  Po--Čt & 8.00--18.00\\
+  Pá & 8.00--16.00\\
+\end{tabular}
+
+\subsection{Studovna anglického jazyka a literatury}
+				Celetná 13, suterén
+
+        \smallskip
+
+\begin{flushleft}
+\noindent\begin{tabular}{@{}ll}
+Po &    13.00--16.00\\
+Út & 9.00--12.00  \\
+St & 9.00--12.00 \\
+Čt &    --\\
+Pá &    13.00--16.00 \\
+\end{tabular}
+      \end{flushleft}
+
+\section{Odkazy}
+
+\subsection{WWW stránky knihovny}
+\url{http://knihovna.pedf.cuni.cz}
+\subsection{Elektronický katalog}
+\url{http://ckis.cuni.cz}
+\subsection{Portál elektronických zdrojů UK}
+\url{http://pez.cuni.cz}
+
+\end{page}
+\end{document}
