@@ -1,0 +1,17 @@
+local filter = require "make4ht-filter"
+
+local svg_process = filter(function(svg)
+  return svg:gsub("iso%-8859%-1", "utf-8")
+end)
+Make:match("svg$", svg_process) 
+
+local html_process = filter(function(html)
+  local text = html:match("<body%s*>(.-)</body>")
+  return [[---
+title: Průvodce knihovnou
+---
+<h1>Průvodce knihovnou</h1>
+]] .. text
+end)
+
+Make:match("html$", html_process)
