@@ -1,0 +1,1 @@
+\renewcommand\mail[1]{\textless\url{#1}\textgreater}

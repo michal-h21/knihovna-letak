@@ -1,0 +1,59 @@
+\documentclass[10pt ]{leaflet}
+
+\usepackage{fontspec}
+\setmainfont{Fira Sans}[Ligatures=TeX]
+\usepackage{uklogo}
+% \usepackage[T1]{fontenc}
+% \usepackage[utf8]{inputenc}
+\usepackage[czech]{babel}
+\usepackage{url}
+\usepackage{tabularx}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{letacek}
+
+
+% \newenvironment{page}{\easylist}{\endeasylist\clearpage}
+\newenvironment{page}{}{\clearpage}
+% \usepackage[at]{easylist}
+% \ListProperties(Hide=10)
+\newcommand\potrebujes{\textbf{Potřebujete:}\par\bigskip}
+\newcommand\mytitle[1]{\bgroup\large\bfseries #1\egroup}
+% \renewcommand\subsection[1]{\par\vskip3pt\bgroup\large #1\egroup\par}
+\newcommand\vykrik[1]{\medskip\par\bgroup\Large\MakeUppercase{#1}\egroup}
+\newenvironment{info}{}{}
+\begin{document}
+
+
+\raggedright
+\begin{page}
+  \bgroup
+  \null
+  \vskip 5em
+  \fontsize{42}{68}\selectfont\bfseries
+  % Popr\kern 2pt vé v~knihovně?
+  Průvodce knihovnou
+  \egroup
+  \vfill
+  \uklogo[42pt]
+  % \url{knihovna.pedf.cuni.cz}
+  % \rotatebox{90}{\input{planekknihovny}}
+\end{page}
+\begin{page}
+  \input{letacek}
+\end{page}
+% \begin{page}
+
+% \section{Odkazy}
+
+% \subsection{WWW stránky knihovny}
+% \url{http://knihovna.pedf.cuni.cz}
+% \subsection{Elektronický katalog}
+% \url{http://ckis.cuni.cz}
+% \subsection{Portál elektronických zdrojů UK}
+% \url{http://pez.cuni.cz}
+
+% \end{page}
+\end{document}
