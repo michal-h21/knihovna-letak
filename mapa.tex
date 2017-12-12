@@ -1,0 +1,36 @@
+\documentclass[12pt]{article}
+\usepackage{luatex85}
+\usepackage{fontspec}
+\setmainfont{Fira Sans}
+\usepackage[czech]{babel}
+\usepackage[margin=2cm]{geometry}
+\pagestyle{empty}
+\parindent=0pt
+\usepackage{tikz}
+\usetikzlibrary{shapes.arrows}
+\newcommand\myarrow[1]{%
+  \vskip30pt
+ \tikz{%
+   \node[single arrow, draw=black, fill=black, minimum width=25pt,minimum height=180pt, shape border rotate=#1] {};
+ }
+}
+
+\begin{document}
+\begin{center}
+\setlength{\unitlength}{1.2pt}
+ \begingroup
+ \fontsize{32}{36}
+ \bfseries
+ Studovna\\
+ \myarrow{0}
+
+ \vskip50pt
+ % Půjčovna knih
+ Výpujční protokol\\
+ \myarrow{180}
+
+ \endgroup
+ \vfill
+\input{planekknihovny.tex}
+\end{center}
+\end{document}

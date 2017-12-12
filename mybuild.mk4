@@ -9,6 +9,8 @@ local html_process = filter(function(html)
   local text = html:match("<body%s*>(.-)</body>")
   return [[---
 title: Průvodce knihovnou
+design: false
+styles: ["css/scale.css","css/design.css","css/pruvodce.css"]
 ---
 <h1>Průvodce knihovnou</h1>
 ]] .. text
