@@ -13,6 +13,7 @@
 \usepackage{hyperref}
 \usepackage{enumitem}
 \usepackage{letacek}
+\usepackage{fontawesome}
 
 
 % \newenvironment{page}{\easylist}{\endeasylist\clearpage}
@@ -31,13 +32,18 @@
 \begin{page}
   \bgroup
   \null
-  \vskip 5em
-  \fontsize{42}{68}\selectfont\bfseries
+  \vskip 3em
+  \uklogo[64pt]
+  \vskip -1em
+  \fontsize{35}{68}\selectfont%\bfseries
   % Popr\kern 2pt vé v~knihovně?
-  Průvodce knihovnou
-  \egroup
+ \noindent \kern-4pt Průvodce% knihovnou
   \vfill
-  \uklogo[42pt]
+  % \hbox{\vbox{\hbox{\faicon{facebook-official}}\hbox{\faicon{instagram}}}: \url{@knihovnapedfpraha}}
+  \fontsize{16}{68}\selectfont%\bfseries
+  \noindent\faicon{facebook-official}\,+\,\faicon{instagram}\,: \url{@knihovnapedfpraha}
+  
+  \egroup
   % \url{knihovna.pedf.cuni.cz}
   % \rotatebox{90}{\input{planekknihovny}}
 \end{page}
