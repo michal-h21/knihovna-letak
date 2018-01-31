@@ -1,0 +1,33 @@
+\documentclass[landcape]{article}
+\usepackage{luatex85}
+\usepackage{fontspec}
+\usepackage[margin=1.5cm,landscape]{geometry}
+\usepackage{tikz}
+\usepackage{xcolor}
+\pagestyle{empty}
+\setmainfont{Fira Sans}
+\begin{document}
+\parindent=0pt
+\bfseries
+\fontsize{16}{18}\selectfont
+\newcommand\kolecko{%
+\begin{tikz}
+  \node[circle,fill=red,inner sep=6pt]{%
+
+    % \begin{minipage}{14em}%
+    \begin{minipage}{10em}%
+      \centering
+  % Jsme také na FB a Instagramu.\\@knihovnapedfpraha%
+  FB a Instagram:\\@knihovnapedfpraha%
+\end{minipage}%
+};
+\end{tikz}}
+\kolecko\hfill
+\kolecko\hfill
+\kolecko\\[3cm]
+\kolecko\hfill
+\kolecko\hfill
+\kolecko\\
+
+
+\end{document}
