@@ -4,16 +4,19 @@
 % \subsection{Půjčovna}
 
 % \bigskip
+\ifdefined\ikonka\else%
 \newcommand\ikonka[1]{\bigskip\bgroup\Large #1\egroup\par}
+% \newcommand\ikonka[1]{}
+\renewcommand\section[2][]{%
+  \bgroup\large \textbf{#2}\egroup\par%
+}
+\fi
 \ikonka{\faPencil}
-\section{Jak se zaregistrovat }
+\section{Vyplňte přihlášku online}
 
-Je to jednoduché a ani kvůli tomu nemusíte osobně navštívit knihovnu.
-K~registraci  potřebujete
-  průkaz UK (vystavuje na počkání
-  \href{http://www.cuni.cz/UK-3249.html}{\emph{Informační a poradenské
-  centrum UK}}). Po získání průkazu navštivte stránku \url{knihovna.cuni.cz/e-prihlaska/},
-  kde provedete registraci na pouhá dvě kliknutí.
+Potřebujete jen průkaz UK (vystavuje na počkání \href{http://www.cuni.cz/UK-3249.html}{\emph{Informační a poradenské
+  centrum UK}}). Pak navštivte stránku \url{knihovna.cuni.cz/e-prihlaska/}.
+S touto přihláškou můžete chodit do všech knihoven UK! 
 
 \ikonka{\faBook}
 \section{Půjčování a vracení}
@@ -23,16 +26,20 @@ v~depozitářích. Ze skladu se půjčuje na počkání, z~depozitářů na
 objednávku do dalšího dne nebo k~dohodnutému datu.
 
 
-Standardní výpůjční lhůta je 30 dní, knihy je možné prodloužit.
-K~vracení knih můžete také využít Bibliobox, který se nachází v~přízemí
-u vchodu do Pedagogické fakulty a je dostupný po celou dobu provozu
-budovy.
+Pokud v knihovně nechcete dlouho čekat, můžeme knihy připravit předem. V
+katalogu klikněte u vybraného titulu na odkaz Požadavek. Od dalšího pracovního
+dne si objednávku můžete vyzvednout.  
+
+Standardní výpůjční lhůta je 30 dní, knihy je možné prodloužit. K vracení knih
+můžete také využít biblioboxy – jeden u vrátnice v M. Rettigové 4 a jeden před
+studovnou jazyků v Celetné.   
+
 
 \ikonka{\faSearch}
 \section{Vše najdete v katalogu nebo~ve~vyhledávači UKAŽ}
 
 Požadované tituly se vyhledávají v~\href{http://ckis.cuni.cz/}{\textbf{Centrálním katalogu UK}}. Každý
-dokument je označen signaturou, kterou si zaznamenáte,
+dokument je označen signaturou (např. F54759), kterou si zaznamenáte,
 a my podle ní knihu vyhledáme. V~katalogu najdete také svůj vlastní
 účet, jehož pomocí můžete prodlužovat výpůjčky, rezervovat dokumenty nebo
 sledovat stav konta.
@@ -90,11 +97,14 @@ Pokud si s citacemi nevíte rady, rádi pomůžeme.
 \ikonka{\faHeart}
 \section{Služby pro studenty se~speciálními potřebami}
 
-Připravili jsme pro vás počítač s~asistenčním softwarem
-a~možností tisku a~kopírování zdarma. Pro studenty se zrakovými obtížemi
-nabízíme přístup ke knihám v~elektronické podobě a~kamerovou
-zvětšovací lupu. 
-Vítáni jsou také čtenáři s pohybovým hendikepem.  
+Studovna je vybavena počítačem s nainstalovaným screen readerem NVDA a Fine
+Readerem. Tento počítač je volně dostupný a je možné ho využívat samostatně.
+Pro studenty se zrakovým znevýhodněním je k dispozici 245 zdigitalizovaných
+knih. Přístupné jsou z webu knihovny. Na základě registrace obdržíte heslo pro
+online přístup k nim. Tato registrace umožňuje také bezplatný tisk materiálů
+souvisejících se studiem. Pro individuální přístup s ohledem k Vašim
+specifickým potřebám nás neváhejte kontaktovat.  
+
 \newpage
 \section{Kde nás najdete?}
 
@@ -153,34 +163,24 @@ Celetná 13, Praha 1, 4. patro
 
 \noindent\smallsection{Půjčovna v M. Rettigové}
 
-\ifdefined\HCode
-\begin{tabular}{lllll}
-  Po      & ~ & 8.00 &--& 16.00\\
-  Út--pá  & ~ & 8.00 &--& 17.00
-\end{tabular}
-
-\else
 \begin{tabular}{@{}ll}
   Po--Pá & 9.00 -- 17.00\\
 \end{tabular}
 
-\fi
 
 \vskip 2em
 \noindent\smallsection{Studovna v M. Rettigové}
 
 \begin{tabular}{@{}ll}
-  Po--Čt &  8.00 -- 18.00\\
-  Pá     &  8.00 -- 17.00\\
+  Po--Pá &  8.00 -- 18.00\\
 \end{tabular}
 
 \vskip 2em
 \noindent\smallsection{Studovna v Celetné}
 
 \begin{tabular}{@{}ll}
-  Út\phantom{--Pá} &  13.00 -- 18.45\\
-  Čt &  10.00 -- 14.00\\
-  Pá & 13.00 -- 17.45\\
+  Po &  10.00 -- 15.30\\
+  St & 9.00 -- 18.00\\
 \end{tabular}
 \vskip 2em
 \section{Odkazy}
