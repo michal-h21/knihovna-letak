@@ -30,6 +30,7 @@
 \begin{document}
 
 
+\makeatletter
 \raggedright
 \begin{page}
   \bgroup
@@ -37,11 +38,15 @@
   % \vskip 3em
   % \vskip 7em
   \vfill
-  \fontsize{54}{68}\selectfont\bfseries
+  \fontsize{48}{62}\selectfont\bfseries
   % Popr\kern 2pt vé v~knihovně?
- \noindent \kern-4pt Průvodce\\% knihovnou
+ %\noindent \kern-4pt 
+ Průvodce\\knihovnou\\PedF UK
   \vfill
-  \uklogo[44pt]
+  \null\hfill
+  % \uklogo[52pt]
+  \includegraphics[width=0.5\textwidth,keepaspectratio]{\sova@imgfile}
+  \hfill\null
   % \null
   % \vfill
   % \hbox{\vbox{\hbox{\faicon{facebook-official}}\hbox{\faicon{instagram}}}: \url{@knihovnapedfpraha}}
@@ -53,6 +58,7 @@
   % \url{knihovna.pedf.cuni.cz}
   % \rotatebox{90}{\input{planekknihovny}}
 \end{page}
+\makeatother
 
 \begin{page}
   \input{letacek}
