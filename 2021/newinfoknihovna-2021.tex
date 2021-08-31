@@ -1,0 +1,81 @@
+\documentclass[12pt ]{leaflet}
+
+\usepackage{fontspec}
+% \setmainfont{Fira Sans}[Ligatures=TeX]
+\setmainfont{Liberation Sans}[Ligatures=TeX]
+\usepackage{uklogo}
+% \usepackage[T1]{fontenc}
+% \usepackage[utf8]{inputenc}
+\usepackage[czech]{babel}
+\setmonofont{Liberation Sans}
+\usepackage{url}
+\usepackage{tabularx}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{letacek}
+\usepackage{fontawesome}
+\usepackage{luavlna}
+
+
+% \newenvironment{page}{\easylist}{\endeasylist\clearpage}
+\newenvironment{page}{}{\clearpage}
+% \usepackage[at]{easylist}
+% \ListProperties(Hide=10)
+\newcommand\potrebujes{\textbf{Potřebujete:}\par\bigskip}
+\newcommand\mytitle[1]{\bgroup\large\bfseries #1\egroup}
+% \renewcommand\subsection[1]{\par\vskip3pt\bgroup\large #1\egroup\par}
+\newcommand\vykrik[1]{\medskip\par\bgroup\Large\MakeUppercase{#1}\egroup}
+\newenvironment{info}{}{}
+\begin{document}
+
+
+\makeatletter
+\raggedright
+\begin{page}
+  \bgroup
+  \null
+  % \vskip 3em
+  % \vskip 7em
+  \uklogo[52pt]
+  \vfill
+  \fontsize{48}{62}\selectfont\bfseries
+  % Popr\kern 2pt vé v~knihovně?
+ %\noindent \kern-4pt 
+  % Průvodce
+ \includegraphics[width=\textwidth]{pruvodce-text.png}
+ % Průvodce\\knihovnou\\PedF UK
+  \vfill
+  \null\hfill
+  \includegraphics[width=0.5\textwidth,keepaspectratio]{kniha.png}
+  % \hfill\null
+  % \null
+  % \vfill
+  % \hbox{\vbox{\hbox{\faicon{facebook-official}}\hbox{\faicon{instagram}}}: \url{@knihovnapedfpraha}}
+  \fontsize{16}{68}\selectfont%\bfseries
+  \normalfont
+  % \noindent\faicon{facebook-official}\,+\,\faicon{instagram}\,: @knihovnapedfpraha
+  
+  \egroup
+  % \url{knihovna.pedf.cuni.cz}
+  % \rotatebox{90}{\input{planekknihovny}}
+\end{page}
+\makeatother
+
+\begin{page}
+  \input{letacek}
+\end{page}
+% \begin{page}
+
+% \section{Odkazy}
+
+% \subsection{WWW stránky knihovny}
+% \url{http://knihovna.pedf.cuni.cz}
+% \subsection{Elektronický katalog}
+% \url{http://ckis.cuni.cz}
+% \subsection{Portál elektronických zdrojů UK}
+% \url{http://pez.cuni.cz}
+
+% \end{page}
+\end{document}
